@@ -1,0 +1,28 @@
+{
+  "name": "vt-gulp-task-templates",
+  "version": "1.0.0",
+  "description": "Gulp task templates - SCSS, TypeScript etc.",
+  "author": "Vlad Tokarev <vlad@tokarev.tk>",
+  "keywords": [
+    "gulp",
+    "scss",
+    "ts",
+    "typescript",
+    "template"
+  ],
+  "repository": "git@github.com:Vadiok/vt-gulp-task-templates.git",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "del": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-clean-css": "*",
+    "gulp-if": "*",
+    "gulp-less": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-tsc": "*",
+    "gulp-uglify": "*"
+  }
+}
