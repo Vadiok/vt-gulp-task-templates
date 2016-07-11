@@ -29,8 +29,8 @@ var dirMaker = {
 		result = result.replace(/\/+/g,"/");
 		return result;
 	},
-	source: function(path) { return this.dir(cfg("sourceDir", "source") + "/" + path); },
-	build: function(path) { return this.dir(cfg("buildDir", "dist") + "/" + path); }
+	source: function(path) { return this.dir(cfg("common.sourceDir", "source") + "/" + path); },
+	build: function(path) { return this.dir(cfg("common.buildDir", "dist") + "/" + path); }
 };
 
 module.exports = {

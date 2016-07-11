@@ -5,6 +5,7 @@
   "author": "Vlad Tokarev <vlad@tokarev.tk>",
   "keywords": [
     "gulp",
+    "less",
     "scss",
     "ts",
     "typescript",
