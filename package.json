@@ -1,6 +1,6 @@
 {
   "name": "vt-gulp-task-templates",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gulp task templates - SCSS, TypeScript etc.",
   "author": "Vlad Tokarev <vlad@tokarev.tk>",
   "keywords": [
@@ -24,6 +24,9 @@
     "gulp-sass": "*",
     "gulp-sourcemaps": "*",
     "gulp-tsc": "*",
-    "gulp-uglify": "*"
+    "gulp-uglify": "*",
+    "ts-loader": "*",
+    "typescript": "*",
+    "webpack-stream": "*"
   }
 }

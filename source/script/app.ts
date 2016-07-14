@@ -1,3 +1,5 @@
+import {a, b} from "./import-test";
+
 class SomeClass {
 	private x;
 	private y;
@@ -12,3 +14,5 @@ class SomeClass {
 	}
 
 }
+
+var classTest = new SomeClass(a, b);
