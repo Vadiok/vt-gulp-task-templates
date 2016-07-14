@@ -16,3 +16,4 @@ class SomeClass {
 }
 
 var classTest = new SomeClass(a, b);
+console.log(classTest.sum());
