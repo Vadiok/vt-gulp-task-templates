@@ -19,6 +19,7 @@
     "gulp-clean-css": "*",
     "gulp-if": "*",
     "gulp-less": "*",
+    "gulp-pug": "*",
     "gulp-rename": "*",
     "gulp-sass": "*",
     "gulp-sourcemaps": "*",

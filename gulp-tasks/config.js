@@ -22,6 +22,12 @@ config.js = {
 	"fileName": "script"
 };
 
+// Template result subdir and extension
+config.tpl = {
+	"buildDir":  ".",
+	"extension": "html"
+};
+
 // LESS config
 config.less = {
 	"tasks": {
@@ -61,6 +67,18 @@ config.ts = {
 	"mainFile":     "app",
 	"outputStyle":  "compressed", // nested, expanded, compact, compressed
 	"sourceMapDir": "."           // "." - same dir as file, false - sourcemaps places into file
+};
+
+// Pug config
+config.pug = {
+	"tasks": {
+		"compile": "pug",
+		"clean":   "pug:clean",
+		"watch":   "pug:watch"
+	},
+	"sourceDir":  "tpl",
+	"fileString": "*.pug",
+	"options":    {} // https://github.com/pugjs/pug#options
 };
 
 module.exports = config;
