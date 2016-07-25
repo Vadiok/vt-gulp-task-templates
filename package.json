@@ -1,11 +1,12 @@
 {
   "name": "vt-gulp-task-templates",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Gulp task templates - SCSS, TypeScript etc.",
   "author": "Vlad Tokarev <vlad@tokarev.tk>",
   "keywords": [
     "gulp",
     "less",
+    "pug",
     "scss",
     "ts",
     "typescript",
@@ -20,6 +21,7 @@
     "gulp-clean-css": "*",
     "gulp-if": "*",
     "gulp-less": "*",
+    "gulp-pug": "*",
     "gulp-rename": "*",
     "gulp-sass": "*",
     "gulp-sourcemaps": "*",

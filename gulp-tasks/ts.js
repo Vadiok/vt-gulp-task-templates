@@ -1,3 +1,7 @@
+// Warning if ts.treatImports config is set to true!!!
+// You need to add "ts-loader" to "package.json" and install it locally
+// (or make local link to this package: npm i ts-loader -g; npm i ts-loader --link)
+
 var gulp       = require("gulp");
 
 var del        = require("del");

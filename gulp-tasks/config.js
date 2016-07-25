@@ -22,6 +22,12 @@ config.js = {
 	fileName: "script"
 };
 
+// Template result subdir and extension
+config.tpl = {
+	buildDir:  ".",
+	extension: "html"
+};
+
 // LESS config
 config.less = {
 	tasks: {
@@ -62,6 +68,18 @@ config.ts = {
 	treatImports: 0,            // 1 to use webpack bundle which adds additional functions to result file, 0 for use gulp-tsc
 	outputStyle:  "compressed", // nested, expanded, compact, compressed (uses only if !treatImports)
 	sourceMapDir: "."           // "." - same dir as file, false - sourcemaps places into file (uses only if !treatImports)
+};
+
+// Pug config
+config.pug = {
+	tasks: {
+		compile: "pug",
+		clean:   "pug:clean",
+		watch:   "pug:watch"
+	},
+	sourceDir:  "tpl",
+	fileString: "*.pug", // For any subfolders use **/*.pug
+	options:    {} // https://github.com/pugjs/pug#options
 };
 
 module.exports = config;

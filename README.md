@@ -8,3 +8,7 @@
 * Copy required strings from ``./gulpfile.js`` to your ``./gulpfile.js``.
 * By default task tries to compile ``./source/style/main.scss``.
 * Run ``gulp taskName`` to execute some task (task names listed in gulp-tasks/config.js).
+
+---
+
+``./gulp-tasks/config.js`` can be simplified. Any parts of config can be removed. In that case default values will be used in tasks.
