@@ -20,6 +20,7 @@ var helper = require("./common");
 var compile = function() {
 	var sourceFileName = helper.cfg("ts.mainFile", "main");
 	var sourceFile = helper.dir.source(helper.cfg("ts.sourceDir", "script")) + sourceFileName + ".ts";
+	var tsConfigFile = helper.dir.source(helper.cfg("ts.sourceDir", "script")) + "tsconfig.json";
 	var resultFileName = helper.cfg("js.fileName", "main");
 	var resultDir = helper.dir.build(helper.cfg("js.buildDir", "js"));
 	var treatImports = helper.cfg("ts.treatImports", false);
@@ -27,7 +28,8 @@ var compile = function() {
 		.src(sourceFile)
 		.pipe(gulpIf(treatImports, webpack({
 			resolve: {extensions: ["", ".js", ".ts", ".tsx"]},
-			module: {loaders: [{test: /\.tsx?$/, loader: "ts-loader", exclude: "node_modules"}]}
+			module: {loaders: [{test: /\.tsx?$/, loader: "ts-loader", exclude: "node_modules"}]},
+			ts: {configFileName: tsConfigFile}
 		})))
 		.pipe(gulpIf(treatImports, rename(resultFileName + ".js")))
 		.pipe(gulpIf(!treatImports, tsc({
